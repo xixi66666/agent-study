@@ -1,0 +1,27 @@
+# --- secrets ---
+.env
+.env.*
+*.key
+*.pem
+config/secrets/
+
+# --- caches / runtime ---
+.cache/
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# --- vendored ComfyUI (has its own git repo) ---
+ComfyUI/
+
+# --- local media outputs ---
+samples/raw/
+output/
+
+# --- logs ---
+*.log
+
+# --- OS ---
+Thumbs.db
+desktop.ini
