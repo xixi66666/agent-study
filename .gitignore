@@ -13,11 +13,11 @@ venv/
 .venv/
 
 # --- vendored ComfyUI (has its own git repo) ---
-ComfyUI/
+/ComfyUI/
 
 # --- local media outputs ---
 samples/raw/
-output/
+/output/
 
 # --- logs ---
 *.log
