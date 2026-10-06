@@ -1,0 +1,19 @@
+{
+  "comfyui_url": "http://127.0.0.1:8189",
+  "diffusion_model": "wan2.2_ti2v_5B_fp16.safetensors",
+  "text_encoder": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+  "vae": "wan2.2_vae.safetensors",
+  "width": 480,
+  "height": 832,
+  "frames": 121,
+  "output_frames_per_clip": 120,
+  "fps": 24,
+  "steps": 20,
+  "cfg": 5,
+  "sampler": "uni_pc",
+  "scheduler": "simple",
+  "shift": 8,
+  "seed": 2026100410,
+  "use_previous_frame": true,
+  "clip_timeout_seconds": 3600
+}

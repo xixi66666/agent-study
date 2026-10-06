@@ -1,0 +1,23 @@
+{
+  "tool": "Built-in image_gen imagegen",
+  "opening": {
+    "file": "cat_biscuit_opening.png",
+    "prompt": "Use case: illustration-story. Create the opening keyframe for an ORIGINAL Chinese one-minute animated kitten comic titled The Missing Fish Biscuit. Vertical portrait 9:16, clean colorful 2D cel animation, soft pastel cozy sunlit kitchen, appealing original character designs, expressive clear black outlines, flat color shadows. Two small anthropomorphic kitten friends standing at a low round kitchen table, both visible head to feet in the central upper two thirds with ample breathing room. Character A: orange tabby kitten with three darker orange forehead stripes, cream muzzle and belly, large amber eyes, a simple teal neckerchief, cheerful but puzzled, left of table. Character B: pale gray kitten with white muzzle, large green eyes, simple lavender neckerchief, calm thoughtful expression, right of table. On table an empty white saucer with a couple of small crumbs. Cardboard box on floor beside table, no lid, rounded corners, small unmarked brown paper bag inside mostly hidden. Orange kitten points one paw at empty saucer; gray kitten looks toward orange kitten. Simple pastel mint kitchen walls, pale wooden floor, small window sunlight, no humans or other animals. Lower 20 percent relatively clear for later subtitles. A single cinematic animated scene, not a multi-panel page or character sheet. NO text, labels, speech bubbles, titles, watermark or logos. NO resemblance to copyrighted cat characters. Soft warm emotional comedy with very simple staging suitable for image-to-video animation."
+  },
+  "edit_reference": "cat_biscuit_opening.png",
+  "shared_edit_prompt": "Use the provided clean opening frame as the character and background style reference. Keep EXACTLY the same original two 2D cel animated kittens: orange tabby with amber eyes, cream muzzle, teal neckerchief, and pale-gray kitten with green eyes, white muzzle, lavender neckerchief. Preserve original cute round proportions, black outlines, pastel mint kitchen, warm sunlight. Vertical 9:16 composition. Both cats' faces and body fully visible in central upper 65% with breathing room. Bottom 25% simple empty floor. NO text, subtitles, letters, marks resembling writing, speech bubbles, watermarks or logos anywhere. This is one clean cinematic animation keyframe, no panels.",
+  "edits": [
+    {
+      "file": "cat_biscuit_box.png",
+      "prompt": "Change the scene to the kittens crouching beside the open cardboard box on the wooden kitchen floor. Orange kitten left, gray kitten right, both leaning toward the box. The gray kitten points one paw toward a clear small paw-print shape made from flour beside the box. Three small golden biscuit crumbs form a short trail toward the box. An unmarked little brown paper bag is visible inside the box. The orange kitten looks puzzled, ears alert. The round table is visible farther back at left. Simple readable detective scene."
+    },
+    {
+      "file": "cat_biscuit_reveal.png",
+      "prompt": "Change the scene to the moment the orange kitten has found the missing breakfast: it stands at the low round table and holds a small open unmarked brown paper bag in one paw, with a clearly recognizable golden fish-shaped biscuit peeking out. The gray kitten stands on the right watching with a delighted knowing smile. The orange kitten has a sheepish happy expression, other paw touching back of head. Empty white saucer on the table. Cardboard box beside the table. A simple medium-wide composition, faces fully in frame."
+    },
+    {
+      "file": "cat_biscuit_sharing.png",
+      "prompt": "Change the scene to the warm final sharing moment. Both kittens stand beside the low round table, orange left and gray right. Two clearly recognizable golden fish-shaped biscuits lie on a white saucer at the center. Orange kitten extends one friendly paw toward the gray kitten, offering breakfast. Both smile warmly. A small open unmarked brown paper bag and the cardboard box are beside the table. Show both complete characters and table with ample space around faces. Charming cozy medium-wide composition, clean simple background."
+    }
+  ]
+}

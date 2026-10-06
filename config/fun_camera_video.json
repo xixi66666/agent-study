@@ -1,0 +1,21 @@
+{
+  "generation_mode": "fun_camera",
+  "comfyui_url": "http://127.0.0.1:8189",
+  "diffusion_model": "wan2.1_fun_camera_v1.1_1.3B_bf16.safetensors",
+  "text_encoder": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+  "vae": "Wan2.1_VAE.pth",
+  "clip_vision": "wan2.1_clip_vision_h.safetensors",
+  "width": 480,
+  "height": 832,
+  "frames": 81,
+  "output_frames_per_clip": 80,
+  "fps": 16,
+  "steps": 20,
+  "cfg": 6,
+  "sampler": "uni_pc",
+  "scheduler": "simple",
+  "shift": 8,
+  "seed": 2026100410,
+  "use_previous_frame": true,
+  "clip_timeout_seconds": 3600
+}

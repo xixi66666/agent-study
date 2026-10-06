@@ -1,0 +1,7 @@
+scene_description: A warm, charming 3D animated orange kitten wearing a light blue apron stands in a sunlit kitchen beside a bowl of milk. Soft pastel colors, rounded shapes, consistent character design, detailed fur, gentle morning light.
+
+shot_description: A single continuous medium shot. The kitten looks toward the camera, smiles, waves one paw and physically speaks. Its mouth movements naturally synchronize with the dialogue. The camera slowly pushes in, while keeping the whole face and waving paw in the frame. No scene cuts, no subtitles, no on-screen text.
+
+dialogue: The kitten says cheerfully, <d>[Chinese]早上好，今天也要加油哦！</d> After speaking, its mouth closes and it smiles at the camera.
+
+overall_soundscape: Clear, friendly Chinese dialogue in a cute young voice, with quiet kitchen ambience and a soft bell sound as the kitten waves. No music. No other voices.

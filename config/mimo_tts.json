@@ -1,0 +1,11 @@
+{
+  "endpoint": "https://api.xiaomimimo.com/v1/chat/completions",
+  "model": "mimo-v2.5-tts",
+  "timeout_seconds": 180,
+  "sample_rate": 24000,
+  "subtitle_font": "C:/Windows/Fonts/msyhbd.ttc",
+  "subtitle_font_size": 25,
+  "subtitle_band_height": 160,
+  "subtitle_title_font_size": 21,
+  "dialogue_start_offset_seconds": 0.4
+}

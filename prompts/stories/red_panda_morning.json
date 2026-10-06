@@ -1,0 +1,44 @@
+{
+  "title": "竹林里的金色落叶",
+  "synopsis": "清晨，一只小熊猫在竹林中发现一片金色落叶。它好奇地跟随落叶，走过一段苔藓木头，最终在温暖的阳光里停下，享受安静的早晨。",
+  "style": "Realistic wildlife cinematography. The same small red panda throughout, reddish-orange fur, a white face with dark eye markings, black legs, and a fluffy ringed tail. A peaceful lush green bamboo forest with moss-covered ground and soft golden morning light. Natural animal anatomy and movement, gentle cinematic camera motion, one continuous shot, no text or watermark.",
+  "negative_prompt": "blurry, low quality, deformed animal, extra legs, extra tails, duplicate animals, unnatural motion, flickering, abrupt scene changes, text, subtitles, watermark, people",
+  "shots": [
+    {
+      "title": "晨光入林",
+      "description": "镜头缓慢靠近竹林，小熊猫从竹影里走入画面，建立主角与环境。",
+      "camera": "低机位缓慢跟拍，主体保持在画面中下部。",
+      "prompt": "A small red panda walks slowly along a mossy path in a bamboo forest. It takes a few relaxed steps forward. Soft morning sunlight filters through the bamboo. Low-angle medium shot, gentle forward camera tracking."
+    },
+    {
+      "title": "发现落叶",
+      "description": "小熊猫停下脚步，低头观察地面上的金色落叶。",
+      "camera": "延续上一段位置，镜头缓缓靠近。",
+      "prompt": "The red panda slows to a stop and lowers its head to sniff a single golden yellow leaf resting on the mossy ground in front of it. It looks curious and calm. The camera gently moves closer while keeping the whole animal visible."
+    },
+    {
+      "title": "落叶引路",
+      "description": "微风推动落叶，小熊猫好奇地向前追随。",
+      "camera": "轻缓横向跟拍，动作和镜头保持连贯。",
+      "prompt": "A gentle breeze slides the golden yellow leaf a short distance along the mossy path. The red panda follows it with two or three slow steps, looking down at the leaf. Gentle side tracking camera, natural subtle motion."
+    },
+    {
+      "title": "踏过苔木",
+      "description": "小熊猫沿着路边一根低矮的苔藓木头向前行走。",
+      "camera": "保持侧前方中景，展示脚步和毛发细节。",
+      "prompt": "The red panda steps carefully onto a low moss-covered fallen log next to the path and walks a short distance along it. It balances naturally with its fluffy tail. Medium side-front shot, slow smooth camera movement."
+    },
+    {
+      "title": "停在光里",
+      "description": "小熊猫在木头上停下，抬起头，晨光照亮脸部和毛发。",
+      "camera": "轻缓推近，不切换主体。",
+      "prompt": "The red panda stops on the moss-covered log and gently raises its head toward a warm shaft of morning sunlight. The golden light illuminates its white face and reddish fur. A golden yellow leaf rests nearby. Gentle camera push-in, peaceful mood."
+    },
+    {
+      "title": "安静的早晨",
+      "description": "小熊猫安静坐下，镜头缓慢拉远，留下竹林中的温暖画面。",
+      "camera": "缓慢拉远，结尾保持稳定。",
+      "prompt": "The red panda settles into a relaxed sitting position on the low mossy log. It looks quietly toward the sunlit bamboo forest. Its ringed tail rests beside it. The camera slowly pulls back to reveal the peaceful green forest, ending in a stable wide view."
+    }
+  ]
+}

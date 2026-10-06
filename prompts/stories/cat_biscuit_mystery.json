@@ -1,0 +1,172 @@
+{
+  "title": "小鱼饼失踪案",
+  "synopsis": "橘子发现早餐小鱼饼不见了，和团团沿着饼干屑寻找线索。纸箱里的爪印揭开谜底：原来橘子昨晚把饼干藏起来，自己却忘了。两只小猫分享早餐，用一个小笑话结束这场迷你侦探故事。",
+  "style": "An original colorful 2D animated kitten comic, clean expressive black outlines, flat pastel cel shading, consistent cozy mint-green sunlit kitchen with pale wooden floor, low round table, white saucer and open cardboard box. Exactly two small anthropomorphic kitten friends: Juzi is an orange tabby with three darker orange forehead stripes, cream muzzle and belly, amber eyes and a teal neckerchief; Tuantuan is a pale gray kitten with white muzzle, green eyes and a lavender neckerchief. Cute round proportions and consistent character designs. Expressive ears, paws and eyes, small natural animated actions. Medium-wide framing keeps both kittens' faces fully visible with breathing room. Warm playful mood, smooth restrained camera motion, simple clear lower frame with empty floor. No written text or speech bubbles.",
+  "negative_prompt": "photorealistic, 3d render, humans, extra cats, duplicate character, extra limbs, deformed face, changing fur color, changing clothes, cropped face, extreme close-up, blurry, flickering, abrupt scene changes, text, letters, subtitles, speech bubbles, watermark, logo",
+  "speakers": {
+    "橘子": {
+      "voice": "苏打",
+      "style": "用明亮、活泼、稍带孩子气的年轻男声，说标准普通话。像可爱的小猫侦探，表情丰富，语速适中略快，吐字清楚。只朗读给定对白，不额外添加文字或猫叫。"
+    },
+    "团团": {
+      "voice": "茉莉",
+      "style": "用温柔、清楚、有一点机灵俏皮的年轻女声，说标准普通话。像沉着的小猫搭档，语速适中略快，笑意自然。只朗读给定对白，不额外添加文字或猫叫。"
+    }
+  },
+  "references": [
+    {
+      "url": "https://www.simonscat.com/watch",
+      "note": "参考官方短片列表中食物、纸箱等日常小冲突的选题方式；本片角色、对白和剧情均为原创。"
+    }
+  ],
+  "shots": [
+    {
+      "title": "早餐不见了",
+      "description": "橘子望着空盘子，惊讶地举起小爪；团团在一旁观察。",
+      "camera": "固定中景，保留两只小猫完整的脸部。",
+      "start_image": "prompts/assets/cat_biscuit_opening.png",
+      "prompt": "Juzi looks down at the empty white saucer, raises one paw in surprise, and turns toward Tuantuan. Tuantuan looks calmly at the saucer. Both kittens stay in frame, small expressive mouth and ear movement as if talking, gentle medium-wide shot.",
+      "dialogue": [
+        {
+          "speaker": "橘子",
+          "text": "我的小鱼饼，怎么不见了？"
+        }
+      ]
+    },
+    {
+      "title": "侦探搭档",
+      "description": "团团安慰橘子，示意一起找线索。",
+      "camera": "轻缓拉远，确保主体完整。",
+      "prompt": "Tuantuan raises one paw reassuringly toward Juzi, then points toward the wooden floor. Juzi lowers its paw and watches attentively. Both characters maintain their original appearance. Slow subtle pullback, cozy kitchen.",
+      "dialogue": [
+        {
+          "speaker": "团团",
+          "text": "别急，先找找线索。"
+        }
+      ]
+    },
+    {
+      "title": "饼干屑",
+      "description": "橘子发现地板上有几粒饼干屑，兴奋地指过去。",
+      "camera": "中景略向下，仍保留两只猫的脸。",
+      "prompt": "Juzi bends slightly and points at a few golden biscuit crumbs on the wooden floor next to the table. Tuantuan follows Juzi's gaze. The camera slowly tilts down just a little while keeping both faces visible. Clear readable action.",
+      "dialogue": [
+        {
+          "speaker": "橘子",
+          "text": "地上有饼干屑！"
+        }
+      ]
+    },
+    {
+      "title": "线索通向纸箱",
+      "description": "团团指向桌边纸箱，两只猫缓慢移动到纸箱旁。",
+      "camera": "轻缓侧向跟拍。",
+      "prompt": "Tuantuan points toward the open cardboard box beside the table. Both kittens take two small steps toward the box, Juzi following Tuantuan. Smooth slow side camera movement, entire faces visible, same mint kitchen.",
+      "dialogue": [
+        {
+          "speaker": "团团",
+          "text": "它们通向你的纸箱。"
+        }
+      ]
+    },
+    {
+      "title": "神秘小偷",
+      "description": "橘子凑到纸箱边，夸张地警惕张望。",
+      "camera": "中景，保持两只猫与箱子同框。",
+      "prompt": "Juzi leans toward the open cardboard box and cautiously peeks inside, ears perked and eyes wide, then glances at Tuantuan with an exaggerated suspicious expression. Tuantuan stands beside Juzi with a small knowing smile. No new characters appear.",
+      "dialogue": [
+        {
+          "speaker": "橘子",
+          "text": "难道有神秘小偷？"
+        }
+      ],
+      "start_image": "prompts/assets/cat_biscuit_box.png"
+    },
+    {
+      "title": "熟悉的爪印",
+      "description": "团团指着箱边面粉里一枚简单爪印，橘子抬起自己的爪。",
+      "camera": "稳定中景，爪印只是简单图案。",
+      "prompt": "Tuantuan points to a small simple paw-shaped mark in a little spilled flour beside the box. Juzi raises one paw to compare, looking puzzled. Both kittens and their paws are visible in the medium shot, tiny amused gestures.",
+      "dialogue": [
+        {
+          "speaker": "团团",
+          "text": "这只爪印，好眼熟。"
+        }
+      ]
+    },
+    {
+      "title": "自己的爪",
+      "description": "橘子看看自己的爪，再看看团团，神情从疑惑变为尴尬。",
+      "camera": "中景，轻缓推近但不裁切。",
+      "prompt": "Juzi looks at its own raised paw, then turns to Tuantuan with a sheepish surprised expression. Tuantuan tilts its head playfully. Juzi's ears lower slightly. Keep both complete faces visible, very subtle push-in.",
+      "dialogue": [
+        {
+          "speaker": "橘子",
+          "text": "咦？跟我的一样！"
+        }
+      ]
+    },
+    {
+      "title": "昨晚的秘密",
+      "description": "团团指向纸箱里的小纸袋，提醒橘子回忆。",
+      "camera": "保持稳定，两只小猫和纸袋同框。",
+      "prompt": "Tuantuan points into the cardboard box at a small unmarked brown paper bag. Juzi looks into the box, pauses, and starts to smile as it remembers something. Simple thoughtful expressions, unchanged character colors and accessories.",
+      "dialogue": [
+        {
+          "speaker": "团团",
+          "text": "你昨晚藏了什么？"
+        }
+      ]
+    },
+    {
+      "title": "找到早餐",
+      "description": "橘子拿起纸袋，露出里面的金色鱼形饼干。",
+      "camera": "中景，纸袋与饼干清晰可见。",
+      "prompt": "Juzi gently lifts the little brown paper bag from the cardboard box and opens it to reveal a golden fish-shaped biscuit. Its expression turns happy and embarrassed. Tuantuan watches with a warm smile. Medium shot, no close cropping.",
+      "dialogue": [
+        {
+          "speaker": "橘子",
+          "text": "想起来了！我留着当早餐。"
+        }
+      ],
+      "start_image": "prompts/assets/cat_biscuit_reveal.png"
+    },
+    {
+      "title": "破案",
+      "description": "团团笑着指指橘子，橘子害羞地挠头。",
+      "camera": "双人中景，停顿留出笑点。",
+      "prompt": "Tuantuan smiles and gently points toward Juzi. Juzi holds the paper bag and rubs the back of its head with its other paw, embarrassed but cheerful. A small friendly comedy reaction, both kittens clearly visible.",
+      "dialogue": [
+        {
+          "speaker": "团团",
+          "text": "破案了，小偷就是你自己。"
+        }
+      ]
+    },
+    {
+      "title": "侦探费",
+      "description": "橘子把两块鱼饼放在盘子里，邀请团团分享。",
+      "camera": "镜头轻缓拉远，呈现分享动作。",
+      "prompt": "Juzi places two small golden fish-shaped biscuits on the white saucer and slides one toward Tuantuan. Tuantuan accepts with a happy nod. Both kittens stand beside the low table, friendly sharing gesture, slow gentle pullback.",
+      "dialogue": [
+        {
+          "speaker": "橘子",
+          "text": "那侦探费，分你一半！"
+        }
+      ],
+      "start_image": "prompts/assets/cat_biscuit_sharing.png"
+    },
+    {
+      "title": "早餐结案",
+      "description": "两只小猫相视一笑，举着鱼饼，留在温暖厨房里。",
+      "camera": "缓慢拉远，稳定收尾。",
+      "prompt": "The two kittens hold their little fish-shaped biscuits and smile at each other beside the round table. Juzi looks playful and Tuantuan looks amused. They make one small happy nod. Camera slowly pulls back to a stable cozy kitchen view, warm sunlight, complete faces visible.",
+      "dialogue": [
+        {
+          "speaker": "团团",
+          "text": "下次，记得先问问自己！"
+        }
+      ]
+    }
+  ]
+}

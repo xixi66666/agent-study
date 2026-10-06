@@ -8,6 +8,18 @@
 - MVP 设计与验收：[`docs/specs/2026-09-29-comfyui-mvp.md`](docs/specs/2026-09-29-comfyui-mvp.md)
 - 首条样片记录：[`samples/2026-09-29-seedance25-mvp-run01.md`](samples/2026-09-29-seedance25-mvp-run01.md)
 
+本机本地生成已跑通（2026-10-04）：Wan 2.2 TI2V 5B 在 RX 9070 XT 上生成六段约 5 秒的视频，拼接得到 30.25 秒的《竹林里的金色落叶》无声短片。启动 `start-comfyui-gpu.cmd` 后，运行 `generate-video.cmd` 可创建新批次。每次生成独立保存到 `runs/<批次名称>/`。剧本、参数、断点继续和目录约定见 [`docs/本地视频生产.md`](docs/本地视频生产.md)，安装记录见 [`docs/本机环境.md`](docs/本机环境.md)，本地成片验收见 [`samples/2026-10-04-wan22-local-run01.md`](samples/2026-10-04-wan22-local-run01.md)。
+
+一分钟猫咪动画已完成验收（2026-10-04）：原创《小鱼饼失踪案》包含十二段本地生成画面、MiMo 双角色配音和同步中文字幕，成片为 480×832、24fps、60 秒。启动 GPU 服务后，运行 `generate-cat-comic.cmd` 可生成新批次。使用与修稿见 [`docs/配音字幕与猫咪动画.md`](docs/配音字幕与猫咪动画.md)，成片验收见 [`samples/2026-10-04-cat-comic-run01.md`](samples/2026-10-04-cat-comic-run01.md)。
+
+本机操作台：双击 **`start-studio.cmd`**，打开 **http://127.0.0.1:8190**。一级总控台统一管理全部作品、全局任务、共享素材、成片版本与引擎状态；进入作品后，在二级制作台编辑剧本、角色、分镜、对白和字幕，逐镜头重做、试听、合成与导出。支持草稿历史、素材复用和任务恢复。ComfyUI 作为本地生成引擎，并嵌入高级节点工作区。使用与集成范围见 [`docs/操作台.md`](docs/操作台.md)。
+
+当前本机默认使用 H3（2026-10-06）：Script-Weaver 已接入自动编剧与分镜，VideoClaw 连续性审查规则已接入站位、视线和物件检查。H3 同步生成画面和原生声音，再拼接并烧录中文字幕。Wan 两套模型已按用户要求移除，历史成片保留。使用范围和目录见 [`docs/H3自动编剧与制作.md`](docs/H3自动编剧与制作.md)。
+
+H3 一分钟悬疑样片《死亡证明》已完成（2026-10-06）：四位写实人物、十二镜、原生中文对白和中文字幕，768×448、24fps、60 秒。成片与验证记录见 [`samples/2026-10-06-h3-suspense-run01.md`](samples/2026-10-06-h3-suspense-run01.md)。
+
+Fun Camera 运镜已接入（2026-10-04）：模型从魔搭下载并校验，操作台可选择 9 种相机运动预设、调节速度、固定种子比较效果。RX 9070 XT 已验证推近与固定两版猫咪视频，均为 384×640、16fps、5 秒；单段实测约 4～6 分钟。配套模型、调试步骤与限制见 [`docs/操作台.md`](docs/操作台.md#fun-camera-运镜调试)，验收记录见 [`samples/2026-10-04-fun-camera-run01.md`](samples/2026-10-04-fun-camera-run01.md)。
+
 ---
 
 ## 1. 样片档案（已验证）
@@ -34,7 +46,24 @@ AIMedia/
 │  └─ specs/
 │     └─ 2026-09-29-comfyui-mvp.md         ← MVP 设计、范围和验收标准
 ├─ workflows/comfyui/
-│  └─ api_seedance2_5_t2v.json             ← 固定版工作流（480p/9:16/5s，官方模板改）
+│  ├─ api_seedance2_5_t2v.json             ← 云端 MVP 工作流
+│  └─ local_wan22_5b_t2v.json              ← 本地 Wan 2.2 工作流
+├─ config/local_video.json                ← 本地视频参数
+├─ config/cat_comic_video.json             ← 一分钟猫咪动画参数
+├─ config/fun_camera_video.json            ← Fun Camera 运镜采样与配套模型参数
+├─ config/mimo_tts.json                    ← 配音与字幕参数（不含密钥）
+├─ prompts/stories/                       ← 剧本和分镜
+├─ prompts/assets/                        ← 角色与关键场景参考图
+├─ services/media/produce_video.py        ← 分段生成与拼接
+├─ services/media/download_fun_camera.py  ← 魔搭下载、校验与图像编码器转换
+├─ services/media/add_dialogue.py         ← MiMo 配音、字幕时间轴与成片合成
+├─ services/studio/                       ← 本地操作台后端、网页和启动器
+├─ workspace/                             ← 作品草稿、修改历史、上传素材和任务记录（不进入 Git）
+├─ runs/                                 ← 按批次归档的片段、日志、成片（不进入 Git）
+├─ start-studio.cmd                       ← 启动操作台及 GPU 引擎
+├─ start-comfyui-gpu.cmd                  ← 启动本地 GPU 服务
+├─ generate-video.cmd                    ← 创建一条新视频
+├─ generate-cat-comic.cmd                 ← 创建带配音和字幕的猫咪动画
 ├─ samples/
 │  ├─ 2026-09-29-seedance25-mvp-run01.md   ← 样片验收记录
 │  └─ videos/
@@ -42,7 +71,7 @@ AIMedia/
 └─ .gitignore
 ```
 
-说明：**ComfyUI 本体不在仓库内**（体积大、需随版本更新），按第 3 节安装到 `AIMedia\ComfyUI\`（已被 `.gitignore` 排除）。规划中的 `services/`、`prompts/`、`config/`、`database/`、`deploy/` 等目录见 `docs/实施路线.md` 第 9 节。
+说明：**ComfyUI 本体不进入 Git**（体积大、需随版本更新），安装到 `AIMedia\ComfyUI\`（已被 `.gitignore` 排除）。本地重复生成的完整目录约定见 `docs/本地视频生产.md`；后续管线规划见 `docs/实施路线.md` 第 9 节。
 
 ## 3. 复现（任意 Windows 机器，CPU 即可）
 
@@ -282,6 +311,8 @@ A：一律不进 Git。Comfy 登录在浏览器会话；git 凭据在 Windows �
 - AMD ROCm on Windows（ComfyUI 官方公告）：https://blog.comfy.org/p/official-amd-rocm-support-arrives
 - ComfyUI on AMD RX 9000（AMD 官方指南）：https://rocm.blogs.amd.com/artificial-intelligence/comfyui-radeon-9000/README.html
 - Wan 2.2 开源仓库：https://github.com/Wan-Video/Wan2.2
+- MiniMax H3 魔搭权重：https://modelscope.cn/models/Comfy-Org/MiniMax-H3
+- H3 INT8 本机下载、验证工作流与目录说明：[H3 本地部署](docs/H3本地部署.md)
 - 火山方舟 Seedance 定价：https://www.volcengine.com/docs/82379/1099320
 - 完整参考列表见 `docs/实施路线.md` 第 11 节
 
